@@ -1,57 +1,56 @@
-# ft_phonebook_search
+# ft_search
 
-Retrouve un contact dans un annuaire grâce à la recherche dichotomique.
+Retrouve un nombre dans un tableau trié grâce à la recherche dichotomique.
 
-## L'annuaire
+## Le tableau
 
-Créer un tableau de contacts trié par ordre alphabétique.
-
-Chaque contact possède :
-
-- un prénom
-- un numéro de téléphone
-
-Exemple :
-
-Alice    -> 06XXXXXXXX
-Bob      -> 07XXXXXXXX
-Charlie  -> 06XXXXXXXX
-David    -> 06XXXXXXXX
-Emma     -> 07XXXXXXXX
+```c
+int tab[] = {
+    2, 5, 9, 14, 18,
+    23, 31, 37, 42,
+    50, 61, 74, 89
+};
+```
 
 ## Règles
 
-- L'utilisateur entre un prénom.
-- Le programme recherche le contact avec une recherche dichotomique.
-- Si le contact existe, afficher son numéro.
-- Sinon afficher "Contact introuvable."
-- À la fin, proposer une nouvelle recherche (o/n).
+- Le tableau est déjà trié.
+- Le joueur entre un nombre.
+- Le programme doit retrouver ce nombre en utilisant uniquement une recherche dichotomique.
+- Si le nombre est trouvé, afficher son index.
+- Sinon afficher "Nombre introuvable."
+- À la fin, proposer une nouvelle recherche (`o`/`n`).
 
 ## Contraintes
 
-- Pas de for.
-- Pas de switch.
-- Pas de variables globales.
+- Pas de `for`, pas de `switch`, pas de variables globales.
 - La recherche doit obligatoirement être dichotomique.
+- Une recherche linéaire est interdite.
 - Ne doit jamais crash.
-- Makefile avec $(NAME), all, clean, fclean et re.
+- Makefile avec `$(NAME)`, `all`, `clean`, `fclean`, `re`.
 
 ## Exemple
 
-Rechercher :
-Emma
+```
+Tableau chargé !
 
-Contact trouvé !
+Nombre à rechercher : 42
 
-Emma
-07 XX XX XX XX
+Trouvé !
+Index : 8
 
-Nouvelle recherche ? (o/n)
+Rechercher un autre nombre ? (o/n) : o
+
+Nombre à rechercher : 10
+
+Nombre introuvable.
+
+Rechercher un autre nombre ? (o/n) : n
+```
 
 BONUS :
 
-- Afficher le nombre de comparaisons.
-- Afficher chaque étape de la recherche.
-- Ajouter un contact.
-- Supprimer un contact.
-- Trier automatiquement les contacts.
+- Afficher le nombre de comparaisons effectuées.
+- Afficher les bornes (`low`, `mid`, `high`) à chaque étape.
+- Générer automatiquement un tableau trié de 100 nombres.
+- Permettre à l'utilisateur de choisir la taille du tableau.
