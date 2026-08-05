@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_search.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 18:58:56 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/05 19:00:17 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/05 19:16:03 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_lib.h"
-
-//on part du principe que le tab est trie
-
-
-int	main(void)
+int	ft_atoi(char *str)
 {
-	char	buff[5];
+	int (nb) = 0;
+	int (sign) = 1;
+	int (i) = 0;
 
-	ft_putstr("Choisis la taille du tableau : ");
-	read(0, buff, 5);
+	while (str[i] == ' '  || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	while (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		nb = (nb * 10) + (str[i] - '0');
+		i++;
+	}
+	return (nb * sign);
 }

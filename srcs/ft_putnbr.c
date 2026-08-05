@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_search.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 18:58:56 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/05 19:05:40 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/05 19:11:24 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_lib.h"
-
-//on part du principe que le tab est trie
-
-
-int	main(void)
+void	ft_putnbr(int nb)
 {
-	char	buff[5];
-
-	ft_putstr("Choisis la taille du tableau : ");
-	read(0, buff, 5);
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 12);
+		return ;
+	}
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb = -nb;
+	}
+	if (nb >= 0 && nb <= 9)
+		ft_putchar(nb + '0');
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putchar(nb % 10 + '0');
+	}
 }

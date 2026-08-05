@@ -6,11 +6,9 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:31:00 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 18:32:15 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 19:04:38 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "ft_lib.h"
 
 void	ft_putstr(char *str)
 {
