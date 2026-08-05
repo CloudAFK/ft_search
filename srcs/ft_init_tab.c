@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:56:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 19:54:58 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 20:29:38 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,15 @@
 
 int	*ft_init_tab(void)
 {
-	char	buff[5];
+	char	buff[1];
 	int		*tab;
-	int		i = 0;
-	int		size;
+	int	(i) = 0;
+	int	(size) = 0;
 
 	ft_putstr("Choisis la taille du tableau : ");
-	read(0, buff, 4);
-	size = ft_strlen(buff);
+	printf("%ld", read(0, buff, 1));
 	printf("La size du tab :%d", size);
-	tab = malloc(sizeof(int) * (ft_atoi(buff)+ 1));
-	ft_putnbr(size);
+	tab = malloc(sizeof(int) * size);
 	while (i < size)
 	{
 		tab[i] = i;

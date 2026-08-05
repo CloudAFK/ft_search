@@ -6,16 +6,16 @@
 #    By: romasant <romasant@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/05 18:36:20 by romasant          #+#    #+#              #
-#    Updated: 2026/08/05 18:52:58 by romasant         ###   ########.fr        #
+#    Updated: 2026/08/05 20:02:02 by romasant         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CLEAR= clear
 CC= cc
 CFLAGS= -Wall -Wextra -Werror -g
-RM= rm -rf
+RM= rm -f
 SRCS = srcs/*.c
-NAME= ./a.out
+NAME= a.out
 
 all:
 	$(CLEAR)
