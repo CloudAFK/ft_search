@@ -1,0 +1,57 @@
+# ft_phonebook_search
+
+Retrouve un contact dans un annuaire grâce à la recherche dichotomique.
+
+## L'annuaire
+
+Créer un tableau de contacts trié par ordre alphabétique.
+
+Chaque contact possède :
+
+- un prénom
+- un numéro de téléphone
+
+Exemple :
+
+Alice    -> 06XXXXXXXX
+Bob      -> 07XXXXXXXX
+Charlie  -> 06XXXXXXXX
+David    -> 06XXXXXXXX
+Emma     -> 07XXXXXXXX
+
+## Règles
+
+- L'utilisateur entre un prénom.
+- Le programme recherche le contact avec une recherche dichotomique.
+- Si le contact existe, afficher son numéro.
+- Sinon afficher "Contact introuvable."
+- À la fin, proposer une nouvelle recherche (o/n).
+
+## Contraintes
+
+- Pas de for.
+- Pas de switch.
+- Pas de variables globales.
+- La recherche doit obligatoirement être dichotomique.
+- Ne doit jamais crash.
+- Makefile avec $(NAME), all, clean, fclean et re.
+
+## Exemple
+
+Rechercher :
+Emma
+
+Contact trouvé !
+
+Emma
+07 XX XX XX XX
+
+Nouvelle recherche ? (o/n)
+
+BONUS :
+
+- Afficher le nombre de comparaisons.
+- Afficher chaque étape de la recherche.
+- Ajouter un contact.
+- Supprimer un contact.
+- Trier automatiquement les contacts.
