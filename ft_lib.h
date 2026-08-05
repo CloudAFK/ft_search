@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:08:22 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 19:09:33 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 19:53:06 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 void	ft_putstr(char *str);
 int		*ft_init_tab(void);

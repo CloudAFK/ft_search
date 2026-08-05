@@ -6,9 +6,11 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 19:03:06 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 19:03:33 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 19:43:19 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../ft_lib.h"
 
 int	ft_strlen(char *str)
 {

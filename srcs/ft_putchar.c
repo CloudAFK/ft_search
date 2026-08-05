@@ -6,9 +6,11 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 19:08:59 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 19:09:22 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 19:43:02 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../ft_lib.h"
 
 void	ft_putchar(char c)
 {
