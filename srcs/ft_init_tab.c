@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:56:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/07 00:20:41 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/07 00:32:22 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	*ft_init_tab(int *size)
 		buff[i] = '\0';
 		i++;
 	}
-	read(0, buff, 10);
+	read(0, buff, 9);
 	check = ft_check_input(buff);
 	if (check == 0)
 		return (NULL);
@@ -56,7 +56,7 @@ int	*ft_init_tab(int *size)
 	{
 		i = 0;
 		*size = ft_atoi(buff);
-		if (*size < 0)
+		if (*size <= 0)
 			return (NULL);
 		tab = malloc(sizeof(int) * (*size + 1));
 		if (!tab)
