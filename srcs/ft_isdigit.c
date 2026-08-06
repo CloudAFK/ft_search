@@ -6,11 +6,11 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 23:44:01 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 23:56:24 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/07 00:36:54 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if ((c >= '0' && c <= '9'))
 		return (1);
