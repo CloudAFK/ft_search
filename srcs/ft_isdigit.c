@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lib.h                                           :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 18:08:22 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 23:43:54 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/06 23:44:01 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/06 23:44:50 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIB_H
-# define FT_LIB_H
-
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-
-void	ft_putstr(char *str);
-int		*ft_init_tab(int *size);
-int		ft_strlen(char *str);
-int		ft_atoi(char *str);
-void	ft_putnbr(int nb);
-void	ft_putchar(char c);
-int		ft_dichotomous(int search, int *tab, int size);
-int		ft_intlen(int *tab);
-int		ft_isdigit(char c);
-
-#endif
+int		ft_isdigit(char c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
+}

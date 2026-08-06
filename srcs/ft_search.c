@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 23:33:12 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 23:51:07 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ int	main(void)
 	int (index) = 0;
 	int (search) = 0;
 	tab = ft_init_tab(&size);
+	if (tab == NULL)
+	{
+		ft_putstr("Erreur : Size negative");
+		return (0);
+	}
 	ft_putstr("Tape le nombre que tu veux chercher : ");
 	read(0, buff_nb, 10);
 	search = ft_atoi(buff_nb);
