@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 18:14:12 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 22:20:55 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 23:34:47 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,6 @@ int	ft_dichotomous(int search, int *tab, int size)
 		ft_putchar('\n');
 	}
 	else
-		ft_putstr("La valeur n'a pas etait trouvee\n");
+		ft_putstr("Nombre introuvable.\n");
 	return (find);
 }

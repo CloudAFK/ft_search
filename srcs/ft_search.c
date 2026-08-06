@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 23:23:52 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 23:33:12 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ int	main(void)
 		ft_putstr("Erreur : Ton tableau est vide !\n");
 		return (0);
 	}
+	free(tab);
 	return (0);
 }

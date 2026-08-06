@@ -19,7 +19,6 @@ int tab[] = {
 - Le programme doit retrouver ce nombre en utilisant uniquement une recherche dichotomique.
 - Si le nombre est trouvé, afficher son index.
 - Sinon afficher "Nombre introuvable."
-- À la fin, proposer une nouvelle recherche (`o`/`n`).
 
 ## Contraintes
 
@@ -39,13 +38,11 @@ Nombre à rechercher : 42
 Trouvé !
 Index : 8
 
-Rechercher un autre nombre ? (o/n) : o
+```
 
 Nombre à rechercher : 10
 
 Nombre introuvable.
-
-Rechercher un autre nombre ? (o/n) : n
 ```
 
 BONUS :
