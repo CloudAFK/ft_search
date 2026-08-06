@@ -6,11 +6,11 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 18:05:40 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 18:10:46 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_lib.h"
+#include "../include/ft_lib.h"
 
 //on part du principe que le tab est trie
 

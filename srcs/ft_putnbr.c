@@ -6,11 +6,11 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 19:05:40 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 19:43:10 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 18:10:40 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_lib.h"
+#include "../include/ft_lib.h"
 
 void	ft_putnbr(int nb)
 {

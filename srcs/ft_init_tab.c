@@ -6,11 +6,11 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:56:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 18:05:33 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 18:10:24 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_lib.h"
+#include "../include/ft_lib.h"
 
 void	ft_init_tab(void)
 {
