@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 19:38:03 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 23:23:52 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	main(void)
 	ft_putstr("Tape le nombre que tu veux chercher : ");
 	read(0, buff_nb, 10);
 	search = ft_atoi(buff_nb);
-	printf("%d", search);
+	//size = ft_intlen(tab);
 	index = ft_dichotomous(search, tab, size);
 	 if (index == -1)
 	{

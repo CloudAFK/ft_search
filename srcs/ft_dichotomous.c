@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 18:14:12 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 19:54:51 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 22:20:55 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,29 @@
 
 int	ft_dichotomous(int search, int *tab, int size)
 {
-	int (first) = tab[0];
-	int (last) = tab[size];
-	int (middle) = (tab[0] + tab[size]) / 2;
+	int (first) = 0;
+	int (last) = size - 1;
+	int (middle) = (first + last) / 2;
 	int (find) = 0;
 
 
-	if (!tab || !tab[1])
+	if (!tab)
 		return (-1);
 	while (!find && first <= last)
 	{
-		if (search == middle)
+		if (search == tab[middle])
+		{
 			find = 1;
-		else if (search > middle)
+			break ;
+		}
+		else if (search > tab[middle])
+		{
 			first = middle + 1;
+			middle = (first + last) / 2;
+		}
 		else
 		{
-			last = middle + 1;
+			last = middle - 1;
 			middle = (first + last) / 2;
 		}
 	}
