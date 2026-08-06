@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:56:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/07 00:56:14 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/07 01:09:22 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,6 @@ int	*ft_init_tab(int *size)
 		return (NULL);
 	else
 	{
-		ft_check_input(buff);
 		*size = ft_atoi(buff);
 		if (*size <= 0 || *size > 10000)
 			return (NULL);
