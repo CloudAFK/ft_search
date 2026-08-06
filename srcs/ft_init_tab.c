@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:56:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/07 01:09:22 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/07 01:22:20 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,10 @@ int	ft_check_input(char *buff)
 		if (buff[i] != '\0' && buff[i] != '\n')
 		{
 			if (!ft_isdigit(buff[i]))
+			{
 				flag = 1;
+				break ;
+			}
 		}
 		i++;
 	}
@@ -65,15 +68,12 @@ int	*ft_init_tab(int *size)
 	check = ft_check_input(buff);
 	if (check == 0)
 		return (NULL);
-	else
-	{
-		*size = ft_atoi(buff);
-		if (*size <= 0 || *size > 10000)
-			return (NULL);
-		tab = malloc(sizeof(int) * (*size + 1));
-		if (!tab)
-			return (NULL);
-		ft_tab_empty(tab, size);
-	}
+	*size = ft_atoi(buff);
+	if (*size <= 0 || *size > 10000)
+		return (NULL);
+	tab = malloc(sizeof(int) * (*size + 1));
+	if (!tab)
+		return (NULL);
+	ft_tab_empty(tab, size);
 	return (tab);
 }
