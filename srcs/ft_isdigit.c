@@ -6,13 +6,13 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 23:44:01 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 23:44:50 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 23:56:24 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(char c)
+int		ft_isdigit(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((c >= '0' && c <= '9'))
 		return (1);
 	return (0);
 }

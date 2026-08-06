@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:08:22 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 23:43:54 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 23:56:29 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void	ft_putnbr(int nb);
 void	ft_putchar(char c);
 int		ft_dichotomous(int search, int *tab, int size);
 int		ft_intlen(int *tab);
-int		ft_isdigit(char c);
+int		ft_isdigit(int c);
 
 #endif
