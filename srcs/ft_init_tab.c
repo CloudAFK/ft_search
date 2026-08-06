@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:56:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 18:02:05 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 18:05:33 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ void	ft_init_tab(void)
 {
 	char	buff[100];
 	int		*tab;
-	int	(i) = 0;
-	int	(size) = 0;
 
+	int (i) = 0;
+	int (size) = 0;
 	ft_putstr("Choisis la taille du tableau : ");
 	read(0, buff, 100);
 	size = ft_atoi(buff);

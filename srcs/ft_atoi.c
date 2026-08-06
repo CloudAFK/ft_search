@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 19:00:17 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/06 18:02:38 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/06 18:04:11 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@ int	ft_atoi(char *str)
 	int (nb) = 0;
 	int (sign) = 1;
 	int (i) = 0;
-
-	while (str[i] == ' '  || (str[i] >= 9 && str[i] <= 13))
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	while (str[i] == '-' || str[i] == '+')
 	{
