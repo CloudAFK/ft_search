@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:08:22 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 19:53:06 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 20:34:33 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdio.h>
 
 void	ft_putstr(char *str);
-int		*ft_init_tab(void);
+void	ft_init_tab(void);
 int		ft_strlen(char *str);
 int		ft_atoi(char *str);
 void	ft_putnbr(int nb);

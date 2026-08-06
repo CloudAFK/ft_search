@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 17:45:05 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/05 18:58:56 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/05 20:35:51 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 
 int	main(void)
 {
-	char	buff[5];
-
-	ft_putstr("Choisis la taille du tableau : ");
-	read(0, buff, 5);
+	ft_init_tab();
+	return (0);
 }
